@@ -11,7 +11,7 @@ function App() {
           <button className="title_btn psycho">American Psycho</button>
           <button className="title_btn ring">The Ring</button>
           <button className="title_btn alien">Alien</button>
-          <button className="title_btn se7en">Se7en</button>
+          <button className="title_btn exorcist">Exorcist</button>
         </div>
       </div>
     </>

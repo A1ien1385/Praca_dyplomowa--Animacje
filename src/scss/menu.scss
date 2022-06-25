@@ -1,3 +1,7 @@
+body {
+  background-color: $veryDarkGreen;
+}
+
 .space_invader {
   box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 0.5em red,
     2.5em 1.5em 0 0.5em red, -3em -3em 0 0 red, 3em -3em 0 0 red,
@@ -15,33 +19,18 @@
   position: fixed;
   top: 5vh;
   left: 10%;
-  animation: space_invader 7s both infinite linear;
+  animation: space_invader 3s both infinite alternate ease-in-out;
 }
 
 @keyframes space_invader {
   0% {
-    top: 5vh;
-    left: 20%;
-  }
-
-  25% {
-    top: 5vh;
-    left: 70%;
-  }
-
-  50% {
-    top: 75vh;
-    left: 70%;
-  }
-
-  75% {
-    top: 75vh;
+    top: 3vh;
     left: 20%;
   }
 
   100% {
-    top: 5vh;
-    left: 20%;
+    top: 3vh;
+    left: 70%;
   }
 }
 
@@ -53,9 +42,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: $red;
 
   .menu_title {
-    color: white;
+    color: $alizarinCrimson;
+    font-family: "Creepster", cursive;
+    letter-spacing: 3px;
   }
 
   .menu_elements {
@@ -64,7 +56,20 @@
 
     .title_btn {
       height: 50px;
+      background-color: $lightGreen;
+      color: $veryDarkGreen;
       cursor: pointer;
+      font-family: "Creepster", cursive;
+      letter-spacing: 2px;
+      font-size: 1.5em;
+      border: 0;
+      border-top: 2px solid $veryDarkGreen;
+      transition: 0.3s;
+    }
+
+    .title_btn:hover {
+      background-color: darken($lightGreen, 10%);
+      color: $red;
     }
   }
 }
