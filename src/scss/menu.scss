@@ -1,11 +1,62 @@
+.space_invader {
+  box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 0.5em red,
+    2.5em 1.5em 0 0.5em red, -3em -3em 0 0 red, 3em -3em 0 0 red,
+    -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red,
+    2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red,
+    3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red,
+    4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red,
+    -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red,
+    -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+  position: fixed;
+  top: 5vh;
+  left: 10%;
+  animation: space_invader 7s both infinite linear;
+}
+
+@keyframes space_invader {
+  0% {
+    top: 5vh;
+    left: 20%;
+  }
+
+  25% {
+    top: 5vh;
+    left: 70%;
+  }
+
+  50% {
+    top: 75vh;
+    left: 70%;
+  }
+
+  75% {
+    top: 75vh;
+    left: 20%;
+  }
+
+  100% {
+    top: 5vh;
+    left: 20%;
+  }
+}
+
 .menu_box {
-  background-color: red;
+  background-color: green;
   text-align: center;
   width: 30vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  .menu_title {
+    color: white;
+  }
 
   .menu_elements {
     display: flex;
