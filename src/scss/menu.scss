@@ -1,0 +1,19 @@
+.menu_box {
+  background-color: red;
+  text-align: center;
+  width: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .menu_elements {
+    display: flex;
+    flex-direction: column;
+
+    .title_btn {
+      height: 50px;
+      cursor: pointer;
+    }
+  }
+}
