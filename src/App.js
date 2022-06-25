@@ -1,7 +1,10 @@
+import "./scss/main.scss";
+
 function App() {
   return (
     <>
-      <div className="Menu">
+      <h1>Horror playbox</h1>
+      <div className="menu">
         <button className="title_btn">Shinning</button>
         <button className="title_btn">American Psycho</button>
         <button className="title_btn">The Ring</button>
