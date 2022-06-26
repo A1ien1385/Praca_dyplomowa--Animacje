@@ -50,6 +50,7 @@ body {
     color: $alizarinCrimson;
     font-family: "Creepster", cursive;
     letter-spacing: 3px;
+    text-shadow: 3px 4px darken($color: $red, $amount: 20%);
   }
 
   .menu_elements {
