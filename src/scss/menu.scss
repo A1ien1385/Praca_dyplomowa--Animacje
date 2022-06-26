@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 8vh;
   left: 10%;
-  animation: space_invader 3s both infinite alternate linear;
+  animation: space_invader 3s both infinite alternate ease-in-out;
 }
 
 @keyframes space_invader {
@@ -72,6 +72,7 @@ body {
     .title_btn:hover {
       background-color: darken($lightGreen, 10%);
       color: $red;
+      border: 2px solid $red;
     }
   }
 }
