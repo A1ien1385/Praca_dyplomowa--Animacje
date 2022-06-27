@@ -1,11 +1,15 @@
 import "./scss/main.scss";
-import { useHistory } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Menu from "./components/Menu";
+import Exorcist from "./components/Exorcist";
 
 function App() {
   return (
     <>
-      <Menu />
+      <Router>
+        <Menu />
+        {/* <Exorcist /> */}
+      </Router>
     </>
   );
 }
