@@ -17,33 +17,28 @@ body {
   overflow: hidden;
   margin: 50px 0 70px 65px;
   position: fixed;
-  top: 8vh;
-  left: 10%;
+  bottom: 1vh;
+  left: 1%;
   animation: space_invader 3s both infinite alternate ease-in-out;
 }
 
 @keyframes space_invader {
   0% {
-    top: 12vh;
-    left: 30%;
-    transform: rotate(-30deg);
+    left: 1%;
   }
 
   100% {
-    top: 12vh;
-    left: 60%;
-    transform: rotate(30deg);
+    left: 90%;
   }
 }
 
 .menu_box {
   background-color: green;
   text-align: center;
-  width: 30vw;
+  width: 100vw;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   background-color: $red;
 
   .menu_title {
@@ -59,9 +54,11 @@ body {
 
   .menu_elements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
 
     .title_btn {
+      flex-grow: 1;
       height: 50px;
       background-color: $lightGreen;
       color: $veryDarkGreen;

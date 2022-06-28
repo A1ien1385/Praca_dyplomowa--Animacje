@@ -1,8 +1,9 @@
 export default function Exorcist() {
   return (
     <>
-      <h2>Exorcist</h2>
-      <button>Wróc do strony głównej</button>
+      <div className="animation_box">
+        <h2>Exorcist</h2>
+      </div>
     </>
   );
 }

@@ -1,8 +1,9 @@
 export default function TheThing() {
   return (
     <>
-      <h2>The Thing</h2>
-      <button>Wróc do strony głównej</button>
+      <div className="animation_box">
+        <h2>The Thing</h2>
+      </div>
     </>
   );
 }
