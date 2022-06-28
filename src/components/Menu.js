@@ -5,14 +5,26 @@ export default function Menu() {
     <>
       <div className="space_invader"></div>
       <div className="menu_box">
-        <h1 className="menu_title">Horror playbox</h1>
+        <a href="/" className="menu_title">
+          Horror playbox
+        </a>
 
         <div className="menu_elements">
-          <button className="title_btn shinning">Shinning</button>
-          <button className="title_btn thing">The Thing</button>
-          <button className="title_btn ring">The Ring</button>
-          <button className="title_btn alien">Alien</button>
-          <button className="title_btn exorcist">Exorcist</button>
+          <a href="/Shinning" className="title_btn shinning">
+            Shinning
+          </a>
+          <a href="/Thing" className="title_btn thing">
+            The Thing
+          </a>
+          <a href="/Ring" className="title_btn ring">
+            The Ring
+          </a>
+          <a href="/Alien" className="title_btn alien">
+            Alien
+          </a>
+          <a href="/Exorcist" className="title_btn exorcist">
+            Exorcist
+          </a>
         </div>
       </div>
     </>

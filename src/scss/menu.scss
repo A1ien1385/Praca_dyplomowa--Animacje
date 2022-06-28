@@ -51,6 +51,15 @@ body {
     font-family: "Creepster", cursive;
     letter-spacing: 3px;
     text-shadow: 3px 4px darken($color: $red, $amount: 20%);
+    line-height: 50px;
+    font-size: 1.5em;
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu_title:hover {
+    background-color: darken($alizarinCrimson, 10%);
+    color: $red;
   }
 
   .menu_elements {
@@ -75,7 +84,6 @@ body {
     .title_btn:hover {
       background-color: darken($lightGreen, 10%);
       color: $red;
-      border: 2px solid $red;
     }
   }
 }
