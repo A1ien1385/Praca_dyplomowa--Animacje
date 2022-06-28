@@ -2,7 +2,7 @@ export default function Menu() {
   const path = window.location.pathname;
   return (
     <>
-      <div className="space_invader"></div>
+      {/* <div className="space_invader"></div> */}
       <div className="menu_box">
         <div className="menu_title">Horror playbox</div>
 
@@ -21,6 +21,9 @@ export default function Menu() {
           </a>
           <a href="/exorcist" className="title_btn exorcist">
             Exorcist
+          </a>
+          <a href="/juon" className="title_btn exorcist">
+            Juon
           </a>
         </div>
       </div>

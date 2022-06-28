@@ -5,6 +5,7 @@ import Alien from "./components/Alien";
 import Shinning from "./components/Shinning";
 import TheRing from "./components/TheRing";
 import TheThing from "./components/TheThing";
+import Juon from "./components/Juon";
 
 function App() {
   let component;
@@ -23,6 +24,9 @@ function App() {
       break;
     case "/exorcist":
       component = <Exorcist />;
+      break;
+    case "/juon":
+      component = <Juon />;
       break;
   }
 
