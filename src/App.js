@@ -6,10 +6,7 @@ import Exorcist from "./components/Exorcist";
 function App() {
   return (
     <>
-      <Router>
-        <Menu />
-        {/* <Exorcist /> */}
-      </Router>
+      <Menu />
     </>
   );
 }

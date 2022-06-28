@@ -1,6 +1,4 @@
-import React from "react";
-
-function Exorcist() {
+export default function Exorcist() {
   return (
     <>
       <h2>Exorcist</h2>
@@ -8,5 +6,3 @@ function Exorcist() {
     </>
   );
 }
-
-export default Exorcist;

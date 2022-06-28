@@ -1,7 +1,6 @@
-import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function Menu() {
+export default function Menu() {
   return (
     <>
       <div className="space_invader"></div>
@@ -19,5 +18,3 @@ function Menu() {
     </>
   );
 }
-
-export default Menu;
