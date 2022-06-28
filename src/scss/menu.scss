@@ -54,12 +54,7 @@ body {
     line-height: 50px;
     font-size: 1.5em;
     display: block;
-    cursor: pointer;
-  }
-
-  .menu_title:hover {
-    background-color: darken($alizarinCrimson, 10%);
-    color: $red;
+    text-decoration: none;
   }
 
   .menu_elements {

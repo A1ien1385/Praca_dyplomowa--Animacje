@@ -1,5 +1,8 @@
-import React from "react";
-
 export default function TheThing() {
-  return <div>TheThing</div>;
+  return (
+    <>
+      <h2>The Thing</h2>
+      <button>Wróc do strony głównej</button>
+    </>
+  );
 }

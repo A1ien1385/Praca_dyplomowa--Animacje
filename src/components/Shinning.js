@@ -1,5 +1,8 @@
-import React from "react";
-
 export default function Shinning() {
-  return <div>Shinning</div>;
+  return (
+    <>
+      <h2>Shinning</h2>
+      <button>Wróc do strony głównej</button>
+    </>
+  );
 }

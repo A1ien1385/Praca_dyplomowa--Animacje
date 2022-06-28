@@ -1,28 +1,30 @@
+import { Children } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function Menu() {
+  const path = window.location.pathname;
   return (
     <>
       <div className="space_invader"></div>
       <div className="menu_box">
-        <a href="/" className="menu_title">
+        <div href="/" className="menu_title">
           Horror playbox
-        </a>
+        </div>
 
         <div className="menu_elements">
-          <a href="/Shinning" className="title_btn shinning">
+          <a href="/shinning" className="title_btn shinning">
             Shinning
           </a>
-          <a href="/Thing" className="title_btn thing">
+          <a href="/thing" className="title_btn thing">
             The Thing
           </a>
-          <a href="/Ring" className="title_btn ring">
+          <a href="/ring" className="title_btn ring">
             The Ring
           </a>
-          <a href="/Alien" className="title_btn alien">
+          <a href="/alien" className="title_btn alien">
             Alien
           </a>
-          <a href="/Exorcist" className="title_btn exorcist">
+          <a href="/exorcist" className="title_btn exorcist">
             Exorcist
           </a>
         </div>

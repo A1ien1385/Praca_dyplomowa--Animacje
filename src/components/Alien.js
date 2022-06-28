@@ -1,5 +1,8 @@
-import React from "react";
-
 export default function Alien() {
-  return <div>Alien</div>;
+  return (
+    <>
+      <h2>Alien</h2>
+      <button>Wróc do strony głównej</button>
+    </>
+  );
 }

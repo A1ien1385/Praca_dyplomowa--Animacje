@@ -1,5 +1,8 @@
-import React from "react";
-
 export default function TheRing() {
-  return <div>TheRing</div>;
+  return (
+    <>
+      <h2>The Ring</h2>
+      <button>Wróc do strony głównej</button>
+    </>
+  );
 }
