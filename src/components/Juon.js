@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import { ReactComponent as JuonScene } from "./svg/Juon.svg";
 import gsap from "gsap";
+import { TweenMax } from "gsap/gsap-core";
 
 export default function Juon() {
   const wrapper = useRef(null);
@@ -20,11 +21,13 @@ export default function Juon() {
     const ACTIVE_KAYAKOFACE = elements.getElementById('ACTIVE_x5F_KAYAKOFACE');
     const ACTIVE_TOSHIOHEAD_FRONT = elements.getElementById('ACTIVE_x5F_TOSHIOHEAD_x5F_FRONT');
 
-    gsap.set([ToshioHeadBack, ACTIVE_WINDOW_1RIGHT_WALL, ACTIVE_WINDOW_RIGHTWALL, ACTIVE_WINDOW_3LEFTHALF, ACTIVE_WINDOW_RIGHTHALF, ACTIVE_WINDOW_RIGHT_WALL, ACTIVE_WINDOW_RIGHT2_WALL, ACTIVE_KAYAKOSAEKI_WALKING, ACTIVE_KAYAKOFACE, ACTIVE_TOSHIOHEAD_FRONT], {autoAlpha: 0});
+    gsap.set([ToshioHeadBack, ACTIVE_WINDOW_1RIGHT_WALL, ACTIVE_WINDOW_RIGHTWALL, ACTIVE_WINDOW_3LEFTHALF, ACTIVE_WINDOW_RIGHTHALF, ACTIVE_WINDOW_RIGHT_WALL, ACTIVE_WINDOW_RIGHT2_WALL, ACTIVE_KAYAKOSAEKI_WALKING, ACTIVE_KAYAKOFACE, ACTIVE_TOSHIOHEAD_FRONT], {autoAlpha: 0, ease: "power3.inout"});
 
     const tl = gsap.timeline({defaults: {ease: "power3.inout"}});
 
-    tl.fromTo(ACTIVE_TOSHIOHEAD_FRONT, {y: '+=300', autoAlpha: 1}, {duration: 6, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 6,});
+      TweenMax.fromTo(ACTIVE_TOSHIOHEAD_FRONT, {y: '+=300', autoAlpha: 1}, {duration: 10, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 6})
+      TweenMax.fromTo(ACTIVE_KAYAKOSAEKI_WALKING, {x:'+=0', autoAlpha: 1}, {duration: 8, x: '-=200', y: '+=90', autoAlpha: 0, repeat: -1, repeatDelay: 10});
+      TweenMax.fromTo(ACTIVE_WINDOW_1RIGHT_WALL, {}, {autoAlpha: 1, duration: 1, repeat: -1, yoyo: true, repeatDelay: 2})
   })
 
   return (
