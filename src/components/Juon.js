@@ -21,6 +21,10 @@ export default function Juon() {
     const ACTIVE_TOSHIOHEAD_FRONT = elements.getElementById('ACTIVE_x5F_TOSHIOHEAD_x5F_FRONT');
 
     gsap.set([ToshioHeadBack, ACTIVE_WINDOW_1RIGHT_WALL, ACTIVE_WINDOW_RIGHTWALL, ACTIVE_WINDOW_3LEFTHALF, ACTIVE_WINDOW_RIGHTHALF, ACTIVE_WINDOW_RIGHT_WALL, ACTIVE_WINDOW_RIGHT2_WALL, ACTIVE_KAYAKOSAEKI_WALKING, ACTIVE_KAYAKOFACE, ACTIVE_TOSHIOHEAD_FRONT], {autoAlpha: 0});
+
+    const tl = gsap.timeline({defaults: {ease: "power3.inout"}});
+
+    tl.fromTo(ACTIVE_TOSHIOHEAD_FRONT, {y: '+=300', autoAlpha: 1}, {duration: 6, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 6,});
   })
 
   return (
