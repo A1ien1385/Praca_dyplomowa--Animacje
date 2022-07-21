@@ -20,6 +20,7 @@ export default function Juon() {
     const ACTIVE_KAYAKOSAEKI_WALKING = elements.getElementById('ACTIVE_x5F_KAYAKOSAEKI_x5F_WALKING');
     const ACTIVE_KAYAKOFACE = elements.getElementById('ACTIVE_x5F_KAYAKOFACE');
     const ACTIVE_TOSHIOHEAD_FRONT = elements.getElementById('ACTIVE_x5F_TOSHIOHEAD_x5F_FRONT');
+    
 
     gsap.set([ToshioHeadBack, ACTIVE_WINDOW_1RIGHT_WALL, ACTIVE_WINDOW_RIGHTWALL, ACTIVE_WINDOW_3LEFTHALF, ACTIVE_WINDOW_RIGHTHALF, ACTIVE_WINDOW_RIGHT_WALL, ACTIVE_WINDOW_RIGHT2_WALL, ACTIVE_KAYAKOSAEKI_WALKING, ACTIVE_KAYAKOFACE, ACTIVE_TOSHIOHEAD_FRONT], {autoAlpha: 0, ease: "power3.inout"});
 
@@ -38,6 +39,7 @@ export default function Juon() {
       gsap.to(ACTIVE_KAYAKOSAEKI_WALKING, {duration: .6, rotation: 5, transformOrigin: '50% 50%', repeat: -1, yoyo: true});
       gsap.to(ToshioHeadBack, {duration: 4, rotation: -10,  ease: "power1.out", transformOrigin: '50% 50%', repeat: -1, yoyo: true});
       gsap.to(ACTIVE_TOSHIOHEAD_FRONT, {duration: 4, rotation: 15, ease: "power1.out", transformOrigin: '50% 10%', repeat: -1, yoyo: true});
+      
       
   })
 
