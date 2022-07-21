@@ -26,8 +26,14 @@ export default function Juon() {
     const tl = gsap.timeline({defaults: {ease: "power3.inout"}});
 
       TweenMax.fromTo(ACTIVE_TOSHIOHEAD_FRONT, {y: '+=300', autoAlpha: 1}, {duration: 10, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 6})
-      TweenMax.fromTo(ACTIVE_KAYAKOSAEKI_WALKING, {x:'+=0', autoAlpha: 1}, {duration: 8, x: '-=200', y: '+=90', autoAlpha: 0, repeat: -1, repeatDelay: 10});
-      TweenMax.fromTo(ACTIVE_WINDOW_1RIGHT_WALL, {}, {autoAlpha: 1, duration: 1, repeat: -1, yoyo: true, repeatDelay: 2})
+      TweenMax.fromTo(ACTIVE_KAYAKOSAEKI_WALKING, {x:'+=0', autoAlpha: 1}, {duration: 5, x: '-=200', y: '+=90', autoAlpha: 0, repeat: -1, repeatDelay: 10});
+      TweenMax.fromTo(ACTIVE_WINDOW_1RIGHT_WALL, {}, {autoAlpha: 1, duration: 1, repeat: -1, yoyo: true, repeatDelay: 2});
+      TweenMax.fromTo(ACTIVE_WINDOW_RIGHTWALL, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: .6});
+      TweenMax.fromTo(ACTIVE_WINDOW_3LEFTHALF, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: .2});
+      TweenMax.fromTo(ACTIVE_WINDOW_RIGHTHALF, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: .2});
+      TweenMax.fromTo(ACTIVE_WINDOW_RIGHT_WALL, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: 1.5});
+      TweenMax.fromTo(ACTIVE_WINDOW_RIGHT2_WALL, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: .8});
+      TweenMax.fromTo(ToshioHeadBack, {y: '+=300', autoAlpha: 1}, {duration: 14, delay: 7, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 2})
   })
 
   return (
