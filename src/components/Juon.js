@@ -33,7 +33,9 @@ export default function Juon() {
       TweenMax.fromTo(ACTIVE_WINDOW_RIGHTHALF, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: .2});
       TweenMax.fromTo(ACTIVE_WINDOW_RIGHT_WALL, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: 1.5});
       TweenMax.fromTo(ACTIVE_WINDOW_RIGHT2_WALL, {}, {autoAlpha: 1, duration: .6, repeat: -1, yoyo: true, repeatDelay: .8});
-      TweenMax.fromTo(ToshioHeadBack, {y: '+=300', autoAlpha: 1}, {duration: 14, delay: 7, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 2})
+      TweenMax.fromTo(ToshioHeadBack, {y: '+=300', autoAlpha: 1}, {duration: 14, delay: 7, y: '-=1200', autoAlpha: 1, repeat: -1, repeatDelay: 2});
+      TweenMax.fromTo(ACTIVE_KAYAKOFACE, {x: '-=500', autoAlpha: 1, scale: 1.2}, {duration: 2, delay: 7, x: '0', repeat: -1, repeatDelay: 2, yoyo: true})
+      
   })
 
   return (
