@@ -1,5 +1,8 @@
 body {
   background-color: $veryDarkGreen;
+  min-height: 100vh;
+  font-family: "Creepster", cursive;
+ 
 }
 
 .space_invader {
@@ -44,21 +47,28 @@ body {
 
   .menu_title {
     color: $alizarinCrimson;
-    font-family: "Creepster", cursive;
     letter-spacing: 3px;
     text-shadow: 3px 4px darken($color: $red, $amount: 20%);
     line-height: 50px;
     font-size: 1.5em;
     display: block;
     text-decoration: none;
+
+    span 
+    {
+      color: lighten($color: $alizarinCrimson, $amount: 15%);
+      font-size: 1.1em;
+    }
   }
 
   .menu_elements {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .title_btn {
+      flex-basis: 16%;
       flex-grow: 1;
       height: 50px;
       background-color: $lightGreen;
@@ -74,9 +84,26 @@ body {
       line-height: 50px;
     }
 
+    
+
     .title_btn:hover {
       background-color: darken($lightGreen, 10%);
       color: $red;
     }
+
+
+    .comments,
+    .author
+    {
+     color: $red;
+    }
+
+    .comments:hover,
+    .author:hover {
+      background-color: darken($red, 10%);
+      color: $red;
+    }
   }
 }
+
+

@@ -4,7 +4,7 @@ export default function Menu() {
     <>
       {/* <div className="space_invader"></div> */}
       <div className="menu_box">
-        <div className="menu_title">Horror playbox</div>
+        <div className="menu_title">Horror playbox <span>Choose movie below</span></div>
 
         <div className="menu_elements">
           <a href="/shinning" className="title_btn shinning">
@@ -24,6 +24,12 @@ export default function Menu() {
           </a>
           <a href="/juon" className="title_btn exorcist">
             Juon
+          </a>
+          <a href="/comments" className="title_btn comments">
+            Komentarze
+          </a>
+          <a href="/aboutAuthor" className="title_btn author">
+            O Autorze
           </a>
         </div>
       </div>
