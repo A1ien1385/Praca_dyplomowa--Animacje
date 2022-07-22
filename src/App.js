@@ -31,9 +31,6 @@ function App() {
     case "/juon":
       component = <Juon />;
       break;
-    case "/links":
-     component = <Links/>;
-     break;
      case "/aboutAuthor":
      component = <AboutAuthor/>;
      break;

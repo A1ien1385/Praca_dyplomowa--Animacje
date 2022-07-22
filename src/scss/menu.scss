@@ -63,16 +63,18 @@ body {
     }
 
 
-    .comments,
+   
     .author
     {
      color: $red;
+     transition: 1s;
     }
 
-    .comments:hover,
+    
     .author:hover {
       background-color: darken($red, 10%);
       color: $red;
+      letter-spacing: 50px;
     }
   }
 }

@@ -28,9 +28,7 @@ export default function Menu() {
           <a href="/aboutAuthor" className="title_btn author">
             About Author
           </a>
-          <a href="/links" className="title_btn comments">
-            Links
-          </a>
+          
          </div>
       </div>
     </>
