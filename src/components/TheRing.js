@@ -25,11 +25,20 @@ export default function TheRing() {
     const RING = elements.getElementById('ACTIVE_x5F_RING');
     
 
-    gsap.set([SadakoFace, ACTIVE_LIGHT, SADAKOFRAME1, SADAKOFRAME2, SADAKOFRAME3, SADAKOFRAME4, EYE1, EYE2, EYE3, EYE4, EYE5, EYE6, RING], {autoAlpha: 0, ease: "power3.inout"});
+    gsap.set([SadakoFace, ACTIVE_LIGHT, SADAKOFRAME1, SADAKOFRAME2, SADAKOFRAME3, SADAKOFRAME4, EYE1, EYE2, EYE3, EYE4, EYE5, EYE6, RING], {autoAlpha: 0});
 
-    const tl = gsap.timeline({defaults: {ease: "power3.inout"}});
+    const tl = gsap.timeline({defaults: {ease: "power3.inout", delay: .2}});
 
-     
+    tl.fromTo(SADAKOFRAME1, { autoAlpha: 1}, {ease: "power1.out", duration: 1, autoAlpha: 0})
+      .fromTo(SADAKOFRAME2, {duration: 2,  autoAlpha: 0}, { ease: "power1.out",  autoAlpha: 1})
+      .to(SADAKOFRAME2, { ease: "power1.out",  autoAlpha: 0})
+      .fromTo(SADAKOFRAME3, {duration: 2,  autoAlpha: 0}, { ease: "power1.out",  autoAlpha: 1})
+      .to(SADAKOFRAME3, { ease: "power1.out",  autoAlpha: 0})
+      .fromTo(SADAKOFRAME4, {duration: 1,  autoAlpha: 0}, { ease: "power1.out",  autoAlpha: 1})
+      .to(SADAKOFRAME4, {duration: 4, x: '-=250', y: '-=200', autoAlpha: 0})
+      
+
+      gsap.fromTo(FOG, {x: '-=15', y: '-=30', scale: 1}, {x: '+=15', y: '+=30', scale: 1.3, duration: 30, ease: "power1.inOut", repeat: -1, yoyo: true});
       
       
       
