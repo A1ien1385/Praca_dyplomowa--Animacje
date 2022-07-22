@@ -26,10 +26,10 @@ export default function Menu() {
             Juon
           </a>
           <a href="/comments" className="title_btn comments">
-            Komentarze
+            Comments
           </a>
           <a href="/aboutAuthor" className="title_btn author">
-            O Autorze
+            About Author
           </a>
         </div>
       </div>
