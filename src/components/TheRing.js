@@ -46,7 +46,7 @@ export default function TheRing() {
       gsap.fromTo(EYE4, {delay: 3, autoAlpha: .2, scale: 1}, {autoAlpha: 0,  duration: .7, ease: "power1.inOut", repeatDelay: 3,  repeat: -1, yoyo: true});
       gsap.fromTo(EYE5, {delay: 3, autoAlpha: .3, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, repeatDelay: 3, yoyo: true});
 
-      gsap.fromTo(RING, {delay: 3, autoAlpha: 1, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, repeatDelay: 1, yoyo: true});
+      gsap.fromTo(RING, {delay: 3, autoAlpha: .6, scale: 1}, {autoAlpha: 0,  duration: 3, ease: "power1.inOut",  repeat: -1, repeatDelay: 5, yoyo: true});
 
       gsap.fromTo(ACTIVE_LIGHT, { autoAlpha: 1, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, yoyo: true});
 
