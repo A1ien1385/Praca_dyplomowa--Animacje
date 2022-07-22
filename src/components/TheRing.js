@@ -40,6 +40,18 @@ export default function TheRing() {
 
       gsap.fromTo(FOG, {x: '-=15', y: '-=30', scale: 1}, {x: '+=15', y: '+=30', scale: 1.3, duration: 30, ease: "power1.inOut", repeat: -1, yoyo: true});
       
+      gsap.fromTo(EYE1, {autoAlpha: .4, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, repeatDelay: 1, yoyo: true});
+      gsap.fromTo(EYE2, {delay: 3, autoAlpha: .3, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, repeatDelay: 3, yoyo: true});
+      gsap.fromTo(EYE3, {autoAlpha: .4, scale: 1}, {autoAlpha: 0,  duration: .3, repeatDelay: 3, ease: "power1.inOut",  repeat: -1, yoyo: true});
+      gsap.fromTo(EYE4, {delay: 3, autoAlpha: .2, scale: 1}, {autoAlpha: 0,  duration: .7, ease: "power1.inOut", repeatDelay: 3,  repeat: -1, yoyo: true});
+      gsap.fromTo(EYE5, {delay: 3, autoAlpha: .3, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, repeatDelay: 3, yoyo: true});
+
+      gsap.fromTo(RING, {delay: 3, autoAlpha: 1, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, repeatDelay: 1, yoyo: true});
+
+      gsap.fromTo(ACTIVE_LIGHT, { autoAlpha: 1, scale: 1}, {autoAlpha: 0,  duration: .3, ease: "power1.inOut",  repeat: -1, yoyo: true});
+
+      gsap.fromTo(SadakoFace, {autoAlpha: 0, scale: 1, x: '-=500'}, {scale: 1.2, repeatDelay: .5, autoAlpha: 1, x: '0', duration: 18, ease: "power1.inOut",  repeat: -1, yoyo: true});
+      
       
       
   })
