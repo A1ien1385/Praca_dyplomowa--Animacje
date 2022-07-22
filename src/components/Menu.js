@@ -2,7 +2,7 @@ export default function Menu() {
   const path = window.location.pathname;
   return (
     <>
-      {/* <div className="space_invader"></div> */}
+      
       <div className="menu_box">
         <div className="menu_title">Horror playbox <span>Choose movie below</span></div>
 
@@ -25,13 +25,13 @@ export default function Menu() {
           <a href="/juon" className="title_btn exorcist">
             Juon
           </a>
-          <a href="/comments" className="title_btn comments">
-            Comments
-          </a>
           <a href="/aboutAuthor" className="title_btn author">
             About Author
           </a>
-        </div>
+          <a href="/links" className="title_btn comments">
+            Links
+          </a>
+         </div>
       </div>
     </>
   );

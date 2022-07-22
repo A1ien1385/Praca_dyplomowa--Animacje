@@ -53,6 +53,7 @@ export default function Juon() {
       <div ref={wrapper} className="animation_box">
         <JuonScene/>
       </div>
+
     </>
   );
 }

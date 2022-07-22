@@ -1,4 +1,4 @@
-export default function Comments() {
+export default function Links() {
     return (
       <>
         

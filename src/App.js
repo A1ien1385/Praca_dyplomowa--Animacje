@@ -6,8 +6,9 @@ import Shinning from "./components/Shinning";
 import TheRing from "./components/TheRing";
 import TheThing from "./components/TheThing";
 import Juon from "./components/Juon";
-import Comments from "./Comments";
+import Comments from "./Links";
 import AboutAuthor from "./AboutAuthor";
+import Links from "./Links";
 
 function App() {
   let component;
@@ -30,8 +31,8 @@ function App() {
     case "/juon":
       component = <Juon />;
       break;
-    case "/comments":
-     component = <Comments/>;
+    case "/links":
+     component = <Links/>;
      break;
      case "/aboutAuthor":
      component = <AboutAuthor/>;
