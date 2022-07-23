@@ -31,6 +31,25 @@ export default function Menu() {
         </div>
        </div>
 
+       <div className="tv_box">
+        <div className="btn_one"></div>
+        <div className="btn_two"></div>
+
+        <div className="element el1"></div>
+        <div className="element el2"></div>
+        <div className="element el3"></div>
+        <div className="element el4"></div>
+        <div className="element el5"></div>
+        <div className="element el6"></div>
+        <div className="element el7"></div>
+        <div className="element el8"></div>
+        <div className="element el9"></div>
+        <div className="element el10"></div>
+        <div className="element el11"></div>
+        <div className="element el12"></div>
+
+       </div>
+
        <div className="submenu_author">
           <a href="/author" className="title_btn author">
             About author

@@ -1,10 +1,64 @@
 .animation_box {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 960px;
   height: 560px;
   background-color: black;
   z-index: 1;
+
+  -webkit-box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
+-moz-box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
+box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
+}
+
+.tv_box
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -43%);
+  width: 1260px;
+  height: 660px;
+  background-color: $tvMainColor;
+  border-radius: 20px;
+
+  .btn_one
+  {
+    top: 20%;
+  }
+
+  .btn_two
+  {
+    top: 40%;
+  }
+
+  .btn_one,
+  .btn_two
+  {
+    position: absolute;
+    background-color: darken($color: $tvMainColor, $amount: 15%);
+    right: 3%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-45%, -43%);
+    -webkit-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
+    -moz-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
+    box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
+    
+  }
+
+  .element 
+  { position: relative;
+    top: 380px;
+    left: 1070px;
+    width: 150px;
+    height: 7px;
+    background-color: darken($color: $tvMainColor, $amount: 15%);
+    margin: 5px;
+    border-radius: 30px;
+    
+  }
 }
