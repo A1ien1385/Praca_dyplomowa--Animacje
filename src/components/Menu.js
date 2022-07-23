@@ -25,8 +25,8 @@ export default function Menu() {
           <a href="/juon" className="title_btn exorcist">
             Juon
           </a>
-          <a href="/aboutAuthor" className="title_btn author">
-            About Author
+          <a href="/anaconda" className="title_btn author">
+            Or play Anaconda The Game
           </a>
           
          </div>
