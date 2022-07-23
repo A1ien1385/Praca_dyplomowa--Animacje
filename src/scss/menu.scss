@@ -64,17 +64,21 @@ body {
 
 
    
-    .author
+    .anaconda
     {
      color: $red;
      transition: 1s;
+
+    
     }
 
     
-    .author:hover {
+    .anaconda:hover {
       background-color: darken($red, 10%);
-      color: $red;
+      color: $lightGreen;
       letter-spacing: 50px;
+
+      
     }
   }
 }
