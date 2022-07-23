@@ -26,7 +26,7 @@ export default function Menu() {
             Juon
           </a>
           <a href="/anaconda" className="title_btn anaconda">
-            Or play Anaconda The Game 
+            Play Anaconda The Game 
           </a>
         </div>
        </div>
