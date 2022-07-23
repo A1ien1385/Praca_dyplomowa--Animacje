@@ -8,7 +8,8 @@ import TheThing from "./components/TheThing";
 import Juon from "./components/Juon";
 
 import Links from "./Links";
-import Anaconda from "./Anaconda";
+import Anaconda from "./components/Anaconda";
+import AboutAuthor from "./components/AboutAuthor";
 
 function App() {
   let component;
@@ -33,6 +34,9 @@ function App() {
       break;
      case "/anaconda":
      component = <Anaconda/>;
+     break;
+     case "/author":
+     component = <AboutAuthor/>;
      break;
   }
 

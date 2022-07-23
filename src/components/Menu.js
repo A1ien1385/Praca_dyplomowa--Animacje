@@ -28,9 +28,14 @@ export default function Menu() {
           <a href="/anaconda" className="title_btn anaconda">
             Or play Anaconda The Game 
           </a>
-          
-         </div>
-      </div>
+        </div>
+       </div>
+
+       <div className="submenu_author">
+          <a href="/author" className="title_btn author">
+            About author
+          </a>
+        </div>
     </>
   );
 }
