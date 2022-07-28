@@ -38,6 +38,9 @@ function App() {
      case "/author":
      component = <AboutAuthor/>;
      break;
+     case "/":
+     component = <Menu/>;
+     break;
   }
 
 

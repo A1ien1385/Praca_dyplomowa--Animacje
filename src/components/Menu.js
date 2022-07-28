@@ -1,4 +1,10 @@
 export default function Menu() {
+
+  const ReloadHandleBtn = (e) => 
+  {
+    e.preventDefault();
+    window.location.reload();
+  }
   const path = window.location.pathname;
   return (
     <>
@@ -32,10 +38,10 @@ export default function Menu() {
        </div>
 
        <div className="tv_box">
-        <div className="btn_one"></div>
-        <div className="btn_two"></div>
+        <button onClick={ReloadHandleBtn} className="btn_one"> Reload Animation</button>
+        <a href="/" className="btn_two"> Turn Off</a>
 
-        <div className="ab--primary"/>
+        <div href="/" className="ab--primary"/>
         
       
 

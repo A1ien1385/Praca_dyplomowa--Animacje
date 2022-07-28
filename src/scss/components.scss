@@ -37,27 +37,39 @@ box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
   .btn_one
   {
     top: 20%;
+    background-color: darken($color: $tvMainColor, $amount: 15%);
+    -webkit-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
+    -moz-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
+    box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
   }
 
   .btn_two
   {
     top: 40%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+    background-color: darken($color: $red, $amount: 15%);
+    -webkit-box-shadow: 0px 0px 0px 9px rgb(101, 123, 80);
+    -moz-box-shadow: 0px 0px 0px 9px rgb(101, 123, 80);
+    box-shadow: 0px 0px 0px 9px rgb(101, 123, 80);
   }
 
   .btn_one,
   .btn_two
   {
+    font-size: .9rem;
     position: absolute;
-    background-color: darken($color: $tvMainColor, $amount: 15%);
     right: 3%;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     transform: translate(-45%, -43%);
-    -webkit-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
-    -moz-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
-    box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
     
+    cursor: pointer;
+    font-family: Roboto;
+    text-decoration: none;
+    color: $veryLightGreen;
   }
 
   .element 
