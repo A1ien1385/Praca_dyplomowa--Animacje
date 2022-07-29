@@ -1,7 +1,7 @@
 import { useState } from "react";
 
  
- const BOARDSIZE = 10;
+ const BOARDSIZE = 9;
  
  const Anaconda = () => {
     const [board, setBoard] = useState(
