@@ -8,7 +8,7 @@ import TheThing from "./components/TheThing";
 import Juon from "./components/Juon";
 
 import Links from "./Links";
-import Anaconda from "./components/Anaconda";
+import Anaconda from "./components/gameComponents/Anaconda";
 import AboutAuthor from "./components/AboutAuthor";
 
 function App() {
