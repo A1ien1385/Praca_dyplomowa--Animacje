@@ -10,6 +10,7 @@ import { useState } from "react";
 
      return (
       <>
+      <div className="animation_box game--box">
         <div className="board">
         {board.map((row, rowIdx) => (
           <div key={rowIdx} className="row">
@@ -20,6 +21,7 @@ import { useState } from "react";
            } 
           </div>
         ))}
+      </div>
       </div>
       </>
     );
