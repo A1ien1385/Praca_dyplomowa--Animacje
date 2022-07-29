@@ -16,7 +16,8 @@ import { useState } from "react";
           <div key={rowIdx} className="row">
            {
             row.map((cell, cellIdx) => (
-              <div key={cellIdx} className="cell"></div>
+              <div key={cellIdx} 
+              className={`cell ${false ? 'snake-cell' : ''}`}></div>
             ))
            } 
           </div>
