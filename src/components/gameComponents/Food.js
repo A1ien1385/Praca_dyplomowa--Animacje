@@ -3,8 +3,8 @@ import React from "react";
 export default (props) => {
 
   const style = {
-    left: `${props.foodDots[0]}%`,
-    top: `${props.foodDots[1]}%`
+    left: `${props.dotFood[0]}%`,
+    top: `${props.dotFood[1]}%`
   }
 
     return (
