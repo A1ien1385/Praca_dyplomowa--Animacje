@@ -19,9 +19,9 @@ class SinglyLinkedList {
  const BOARDSIZE = 9;
  
  const Anaconda = () => {
-    const [board, setBoard] = useState(
-      new Array(BOARDSIZE).fill(0).map(row => new Array(BOARDSIZE).fill(0)),
-    );
+    const [board, setBoard] = useState(createBoard(BOARDSIZE));
+    const [snakeCells, setSnakeCells] = useState(new Set([44]));
+    const [snake, setSnake] = useState(new SinglyLinkedList(44));
 
      return (
       <>
@@ -30,9 +30,9 @@ class SinglyLinkedList {
         {board.map((row, rowIdx) => (
           <div key={rowIdx} className="row">
            {
-            row.map((cell, cellIdx) => (
+            row.map((cellValue, cellIdx) => (
               <div key={cellIdx} 
-              className={`cell ${false ? 'snake-cell' : ''}`}></div>
+              className={`cell ${snakeCells.has(cellValue) ? 'snake-cell' : '' }`}></div>
             ))
            } 
           </div>
@@ -41,6 +41,21 @@ class SinglyLinkedList {
       </div>
       </>
     );
+  }
+
+  const createBoard = BOARDSIZE => {
+    let counter = 1;
+    const board = [];
+    for (let row = 0; row < BOARDSIZE; row++)
+    {
+      const currentRow = [];
+      for(let col = 0; col < BOARDSIZE; col++)
+      {
+        currentRow.push(counter++);
+      }
+      board.push(currentRow);
+    }
+    return board;
   }
 
   export default Anaconda;
