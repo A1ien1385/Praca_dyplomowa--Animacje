@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Snake from "./Snake";
 import Food from "./Food";
  
@@ -23,7 +23,41 @@ const getRandomFoodLocation = () => {
     food: getRandomFoodLocation()
    });
 
+   const [direction, setDirection] = useState({direction: "RIGHT"});
+  
 
+
+   useEffect(() => {
+    window.addEventListener('keydown', onKeyDown);
+  
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, []);
+
+   
+   const onKeyDown = (e) => {
+    e = e || window.event;
+    switch (e.keyCode)
+    {
+      case 38:
+        setDirection({direction: "UP"});
+       break; 
+       case 40:
+        setDirection({direction: "DOWN"});
+       break; 
+       case 37:
+        setDirection({direction: "LEFT"});
+       break; 
+       case 39:
+        setDirection({direction: "RIGHT"});
+       break; 
+    }
+   }
+
+   
+
+  
     
      return (
       <>
