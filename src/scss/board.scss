@@ -3,7 +3,7 @@
     position: absolute;
     width: 560px;
     height: 100%;
-    background-color: $darkGreen;
+    background-image: url(AnacondaBitmap.png);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -14,19 +14,25 @@
     position: absolute;
     width: 2%;
     height: 2%;
-    
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid black;
 }
 
 .snake-food
 {
-    background-color: $red;
-    border: 1px solid $alizarinCrimson;
+    background-image: url(Food.png);
+    
+   
+    -webkit-box-shadow: 0px 0px 23px 12px rgba(229, 35, 46, 0.8);
+    -moz-box-shadow: 0px 0px 23px 12px rgba(229, 35, 46, 0.8);
+    box-shadow: 0px 0px 23px 12px rgba(229, 35, 46, 0.8);
     z-index: 1;
 }
 
 .snake-dot
 {
-    background-color: $veryDarkGreen;
-    border: 1px solid $lightGreen;
+    background-image: url(SnakeTexture.png);
+    
     z-index: 2;
 }

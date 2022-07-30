@@ -84,3 +84,5 @@ moveSnake = () => {
        }
   }
   export default Anaconda;
+
+  //6:33 minute
