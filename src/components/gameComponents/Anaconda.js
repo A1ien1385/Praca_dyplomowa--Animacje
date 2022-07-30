@@ -18,8 +18,8 @@ const getRandomFoodLocation = () => {
     speed: 200,
     direction: "RIGHT",
     snakeDots: [
-      [0,0],
-      [2,0]
+      [10,30],
+      [12,30]
     ]
   }
 
@@ -28,53 +28,47 @@ componentDidMount() {
   document.onkeydown = this.onKeyDown;
 }
 
-onKeyDown = (e) =>
-{
+onKeyDown = (e) => {
   e = e || window.event;
-  switch (e.keyCode)
-  {
+  switch (e.keyCode) {
     case 38:
-      this.setState({direction: "UP"});
-     break; 
-     case 40:
-      this.setState({direction: "DOWN"});
-     break; 
-     case 37:
-      this.setState({direction: "LEFT"});
-     break; 
-     case 39:
-      this.setState({direction: "RIGHT"});
-     break; 
+      this.setState({direction: 'UP'});
+      break;
+    case 40:
+      this.setState({direction: 'DOWN'});
+      break;
+    case 37:
+      this.setState({direction: 'LEFT'});
+      break;
+    case 39:
+      this.setState({direction: 'RIGHT'});
+      break;
   }
 }
 
 moveSnake = () => {
-  let dots = [this.state.snakeDots];
-  let head = dots[dots.length -1];
+  let dots = [...this.state.snakeDots];
+  let head = dots[dots.length - 1];
 
-  switch (this.state.direction)
-  {
-    case "RIGHT":
-      head = [head[0] + 2, head[1]]
-    break;
-
-    case "LEFT":
-      head = [head[0] - 2, head[1]]
-    break;
-
-    case "DOWN":
-      head = [head[0], head[1] + 2]
-    break;
-
-    case "UP":
-      head = [head[0], head[1] - 2]
-    break;
-   }
-   dots.push(head);
-   dots.shift();
-   this.setState({
+  switch (this.state.direction) {
+    case 'RIGHT':
+      head = [head[0] + 2, head[1]];
+      break;
+    case 'LEFT':
+      head = [head[0] - 2, head[1]];
+      break;
+    case 'DOWN':
+      head = [head[0], head[1] + 2];
+      break;
+    case 'UP':
+      head = [head[0], head[1] - 2];
+      break;
+  }
+  dots.push(head);
+  dots.shift();
+  this.setState({
     snakeDots: dots
-   })      
+  })
 }
 
 
@@ -82,8 +76,8 @@ moveSnake = () => {
         return (
           <div className="animation_box">
           <div className="game--box">
-            <Snake snakeDots={this.state.snakeDots}/>
-            <Food dotFood={this.state.food}/>
+          <Snake snakeDots={this.state.snakeDots}/>
+        <Food dot={this.state.food}/>
           </div>
           </div>
         )

@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 export default (props) => {
 
   const style = {
-    left: `${props.dotFood[0]}%`,
-    top: `${props.dotFood[1]}%`
+    left: `${props.dot[0]}%`,
+    top: `${props.dot[1]}%`
   }
 
-    return (
-        <div className="snake-food" style={style}></div>
-    )
+  return (
+    <div className="snake-food" style={style}></div>
+  )
 }
