@@ -1,7 +1,17 @@
 .game--box
 {
     position: absolute;
-    width: 100%;
+    width: 560px;
     height: 100%;
     background-color: $darkGreen;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.snake-dot {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: $alizarinCrimson;
+    border: 1px solid $red;
 }
