@@ -15,18 +15,18 @@
     width: 2%;
     height: 2%;
     
-    // z-index: 2;
-}
-
-.snake-dot
-{
-    background-color: $alizarinCrimson;
-    border: 1px solid yellowgreen;
 }
 
 .snake-food
 {
-    background-color: black;
-    border: 1px solid yellow;
+    background-color: $red;
+    border: 1px solid $alizarinCrimson;
     z-index: 1;
+}
+
+.snake-dot
+{
+    background-color: $lightGreen;
+    border: 1px solid $veryDarkGreen;
+    z-index: 2;
 }
