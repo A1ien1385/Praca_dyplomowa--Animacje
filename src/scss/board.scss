@@ -8,10 +8,25 @@
     transform: translateX(-50%);
 }
 
-.snake-dot {
+.snake-dot,
+.snake-food
+ {
     position: absolute;
     width: 2%;
     height: 2%;
+    
+    // z-index: 2;
+}
+
+.snake-dot
+{
     background-color: $alizarinCrimson;
-    border: 1px solid $red;
+    border: 1px solid yellowgreen;
+}
+
+.snake-food
+{
+    background-color: black;
+    border: 1px solid yellow;
+    z-index: 1;
 }
