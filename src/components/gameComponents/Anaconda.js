@@ -24,6 +24,8 @@ const getRandomFoodLocation = () => {
    });
 
    const [direction, setDirection] = useState({direction: "RIGHT"});
+
+   
   
 
 
@@ -55,7 +57,35 @@ const getRandomFoodLocation = () => {
     }
    }
 
-   
+   const moveSnake = () => {
+    let dots = [...snakeDots.snakeDot];
+    let head = dots[dots.length -1];
+
+    switch (direction.direction)
+    {
+      case 'RIGHT':
+        head = [head[0] + 2, head[1]]
+      break;
+
+      case 'LEFT':
+        head = [head[0] - 2, head[1]]
+      break;
+
+      case 'DOWN':
+        head = [head[0], head[1] + 2]
+      break;
+
+      case 'UP':
+        head = [head[0], head[1] - 2]
+      break;
+     }
+     dots.push(head);
+     dots.shift();
+     setSnakeDots({
+      snakeDot: dots
+     })      
+
+   }
 
   
     
