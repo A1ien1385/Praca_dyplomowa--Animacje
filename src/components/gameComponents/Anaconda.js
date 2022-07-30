@@ -2,7 +2,7 @@ import { useState } from "react";
 import Snake from "./Snake";
 import Food from "./Food";
  
-const getRandom = () => {
+const getRandomFoodLocation = () => {
   let min = 1;
   let max = 98;
 
@@ -20,7 +20,7 @@ const getRandom = () => {
    });
 
    const [foods, setFood] = useState({
-    food: getRandom()
+    food: getRandomFoodLocation()
    });
 
 
