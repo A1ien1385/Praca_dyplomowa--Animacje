@@ -43,6 +43,12 @@ box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
     -webkit-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
     -moz-box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
     box-shadow: 0px 0px 0px 9px rgba(41, 28, 16, 1);
+    
+  }
+
+  .btn_one:hover
+  {
+    background-color: lighten($color: $tvMainColor, $amount: 5%);
   }
 
   .btn_two
@@ -55,6 +61,11 @@ box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
     -webkit-box-shadow: 0px 0px 0px 9px rgb(101, 123, 80);
     -moz-box-shadow: 0px 0px 0px 9px rgb(101, 123, 80);
     box-shadow: 0px 0px 0px 9px rgb(101, 123, 80);
+  }
+
+  .btn_two:hover
+  {
+    background-color: lighten($color: $red, $amount: 5%);
   }
 
   .btn_one,
@@ -72,6 +83,7 @@ box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
     font-family: Roboto;
     text-decoration: none;
     color: $veryLightGreen;
+    transition-duration: .5s;
   }
 
   .element 
