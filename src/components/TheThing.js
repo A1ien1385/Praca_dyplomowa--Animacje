@@ -18,8 +18,8 @@ export default function TheThing() {
     gsap.set([norrisThing], {x: -600})
 
     gsap.to(daySky, {delay: 4, duration: 3, autoAlpha: 0});
-    gsap.to(palmerThing, {delay: 6, duration: 1,  y: 0});
-    gsap.to(norrisThing, {delay: 7, duration: 1.5,  x: 0});
+    gsap.to(palmerThing, {delay: 6, duration: 1,  y: 0, });
+    gsap.to(norrisThing, {delay: 7, duration: 1.5,  x: 0,});
         
   })
 
