@@ -39,9 +39,7 @@
 
 .photo
 {
-    // background-color: lighten($color: $tvMainColor, $amount: 30%);
-    background-image: url(snake_bg.jpg);
-    
+     background-image: url(snake_bg.jpg);
      border: 3px solid lighten($color: $tvMainColor, $amount: 20%);
 }
 .filter 
