@@ -131,7 +131,7 @@ increaseSpeed() {
 }
 
 onGameOver() {
-  alert(`Game Over! You Have got: ${this.state.snakeDots.length - 2} points`);
+  alert(`Game Over! You have got: ${this.state.snakeDots.length - 2} points, and your snake length is ${this.state.snakeDots.length}.`);
   this.setState(startingState);
 }
 
