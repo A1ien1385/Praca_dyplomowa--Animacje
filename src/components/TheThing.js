@@ -1,8 +1,21 @@
+import React, {useRef, useEffect} from "react";
+import { ReactComponent as TheThingScene } from "./svg/TheThing.svg";
+import gsap from "gsap";
+
+
 export default function TheThing() {
+  const wrapper = useRef(null);
+
+  useEffect(()=> {
+    const [elements] = wrapper.current.children;
+    
+        
+  })
+
   return (
     <>
-      <div className="animation_box">
-        <h2>The Thing</h2>
+      <div ref={wrapper} className="animation_box">
+        <TheThingScene/>
       </div>
     </>
   );
