@@ -137,16 +137,15 @@ onGameOver() {
 
        render() {
         return (
-          
-          <div className="animation_box photo">
-          <div className="animation_box filter"> 
-          <div className="game--box">
-          <Snake snakeDots={this.state.snakeDots}/>
-        <Food dot={this.state.food}/>
-          </div>
-          </div>
-          </div> 
-          
+             <>
+            <div className="animation_box snake--bg">
+            <h3 className ="arrow--info left">Press arrows to <br/> control your snake</h3>
+            <div className="game--box">
+            <Snake snakeDots={this.state.snakeDots}/>
+            <Food dot={this.state.food}/>
+            </div>
+            </div> 
+             </>
         )
        }
   }
