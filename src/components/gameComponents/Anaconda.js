@@ -10,22 +10,28 @@ const getRandomFoodLocation = () => {
   let y = Math.floor((Math.random()*(max-min+1)+min)/2)*2;
   return [x,y];
 }
- 
- class Anaconda extends Component {
-  
-  state = {
-    food: getRandomFoodLocation(),
+
+const startingState = {
+  food: getRandomFoodLocation(),
     speed: 200,
     direction: "RIGHT",
     snakeDots: [
       [10,30],
       [12,30]
     ]
-  }
+}
+ 
+ class Anaconda extends Component {
+  
+  state = startingState;
 
 componentDidMount() {
   setInterval(this.moveSnake, this.state.speed);
   document.onkeydown = this.onKeyDown;
+}
+
+componentDidUpdate() {
+  this.checkIfOutOfBorder();
 }
 
 onKeyDown = (e) => {
@@ -71,6 +77,18 @@ moveSnake = () => {
   })
 }
 
+checkIfOutOfBorder() {
+  let head = this.state.snakeDots[this.state.snakeDots.length - 1];
+  if (head[0] >= 100 || head[1] >= 100 || head[0] < 0 || head[1] < 0)
+  {
+   this.onGameOver(); 
+  }
+}
+
+onGameOver() {
+  alert(`Game Over! You Have got: ${this.state.snakeDots.length - 2} points`);
+  this.setState(startingState);
+}
 
        render() {
         return (
