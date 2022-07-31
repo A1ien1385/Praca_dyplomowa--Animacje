@@ -137,7 +137,7 @@ onGameOver() {
 
        render() {
         return (
-          <div className="animation_box">
+          <div className="animation_box snake--box">
           <div className="game--box">
           <Snake snakeDots={this.state.snakeDots}/>
         <Food dot={this.state.food}/>
