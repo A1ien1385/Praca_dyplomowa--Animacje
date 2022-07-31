@@ -137,15 +137,19 @@ onGameOver() {
 
        render() {
         return (
-          <div className="animation_box snake--box">
+          
+          <div className="animation_box photo">
+          <div className="animation_box filter"> 
           <div className="game--box">
           <Snake snakeDots={this.state.snakeDots}/>
         <Food dot={this.state.food}/>
           </div>
           </div>
+          </div> 
+          
         )
        }
   }
   export default Anaconda;
 
-  //6:33 minute
+  

@@ -35,3 +35,18 @@
     z-index: 2;
 }
 
+
+
+.photo
+{
+    // background-color: lighten($color: $tvMainColor, $amount: 30%);
+    background-image: url(snake_bg.jpg);
+    
+     border: 3px solid lighten($color: $tvMainColor, $amount: 20%);
+}
+.filter 
+{
+    backdrop-filter: sepia(100%) blur(5px);
+    position: relative;
+    top: 280px
+}
