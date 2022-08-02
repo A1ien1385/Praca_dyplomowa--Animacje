@@ -25,12 +25,14 @@ export default function AboutAuthor() {
             ],
            }}
            />
-
+            
             <ul className='links'>
             <li> <a className='typing--box links' href='https://github.com/A1ien1385'>{state.linkOne} </a></li>
             <li><a className='typing--box links' href='https://codepen.io/A1ien_1385'>{state.linkTwo} </a></li>
             <li><a className='typing--box links' href='https://www.linkedin.com/in/damian-zawadzki-07b2321a5/'>{state.linkThree} </a></li>
            </ul>
+
+           <h2 className='typing--box links'>Zapraszam do odwiedzenia mnie w linkach powyżej:</h2>  
 
            
       </div>
