@@ -99,3 +99,10 @@ box-shadow: 0px 0px 100px 8px rgba(237, 237, 233, .3);
   }
 }
 
+
+.typing--box
+{
+  border: 3px solid $darkGreen;
+  background-color: darken($color: $lightGreen, $amount: 30%) ;
+}
+
