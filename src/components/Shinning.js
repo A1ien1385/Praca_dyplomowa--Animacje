@@ -16,7 +16,7 @@ export default function Shinning() {
     gsap.set([blood], {autoAlpha: 0});
 
     gsap.to(jackFace, {delay: 2.5, duration: .7, y: 0});
-    gsap.to(blood, {delay: 3.5, duration: .2, autoAlpha: 1});
+    gsap.to(blood, {delay: 3.5, duration: .1, autoAlpha: 1});
       
       
   })

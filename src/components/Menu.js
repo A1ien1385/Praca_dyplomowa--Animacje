@@ -22,12 +22,6 @@ export default function Menu() {
           <a href="/ring" className="title_btn ring">
             The Ring
           </a>
-          <a href="/alien" className="title_btn alien">
-            Alien
-          </a>
-          <a href="/exorcist" className="title_btn exorcist">
-            Exorcist
-          </a>
           <a href="/juon" className="title_btn exorcist">
             Juon
           </a>
