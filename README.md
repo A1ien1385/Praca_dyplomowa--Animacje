@@ -1,3 +1,6 @@
+# My app with SVG animations basics on classical horror movies & snake game
+# Used technologies: React, GSAP
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
