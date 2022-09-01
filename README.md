@@ -1,5 +1,6 @@
 # My app with SVG animations basics on classical horror movies & snake game
 # Used technologies: React, GSAP
+# Link to AWS: https://main.d1g0g8x1l54ez8.amplifyapp.com/
 
 # Getting Started with Create React App
 
